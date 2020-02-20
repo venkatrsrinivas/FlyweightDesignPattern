@@ -75,6 +75,8 @@ class PrivateFlight implements Flight {
 
 
 class AirportFlightFactory {
+	//Can Extend To Reflect The True Flights In An Actual Airport.
+	//Right Now, Only 3 Flights, But In Reality Many More. 
 	private static final HashMap<PlaneType, Flight> allFlightsMap = new HashMap<>();
 
 	public static Flight getMyFlight(Double milesToTravel) {
