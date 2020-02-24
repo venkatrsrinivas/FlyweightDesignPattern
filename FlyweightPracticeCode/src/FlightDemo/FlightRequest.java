@@ -80,13 +80,13 @@ class AirportFlightFactory {
 	private static final HashMap<PlaneType, Flight> allFlightsMap = new HashMap<>();
 
 	public static Flight getMyFlight(Double milesToTravel) {
-		if(milesToTravel >= 0 && milesToTravel <= 7500) {
+		if(milesToTravel >= 0 && milesToTravel <= 1500) {
 			return getPrivateFlight(milesToTravel);
 		}
-		else if(milesToTravel >= 7500 && milesToTravel <= 20000) {
+		else if(milesToTravel > 1500 && milesToTravel <= 5000) {
 			return getDomesticFlight(milesToTravel);
 		}
-		else if(milesToTravel >= 20000 && milesToTravel <= 70000) {
+		else if(milesToTravel > 5000 && milesToTravel <= 10000) {
 			return getInternationalFlight(milesToTravel);
 		}
 		else{
@@ -160,6 +160,6 @@ public class FlightRequest {
 	
 	private static Double getRandomMiles() {
 		Random currentRandomGenerator = new Random();
-		return currentRandomGenerator.nextDouble() * 70000;
+		return currentRandomGenerator.nextDouble() * 10000;
 	}
 }
