@@ -96,45 +96,45 @@ class AirportFlightFactory {
 	}
 	
 	private static Flight getPrivateFlight(Double milesToTravel) {
-//		Flight correctFlight = allFlightsMap.get(PlaneType.PRIVATE);
-//		if(correctFlight == null) {
-//			correctFlight = new PrivateFlight();
-//			correctFlight.setMiles(milesToTravel);
-//			allFlightsMap.put(PlaneType.PRIVATE, correctFlight);
-//		}
-//		return correctFlight;
-
-		Flight correctFlight = new PrivateFlight();
-		correctFlight.setMiles(milesToTravel);
+		Flight correctFlight = allFlightsMap.get(PlaneType.PRIVATE);
+		if(correctFlight == null) {
+			correctFlight = new PrivateFlight();
+			correctFlight.setMiles(milesToTravel);
+			allFlightsMap.put(PlaneType.PRIVATE, correctFlight);
+		}
 		return correctFlight;
+
+//		Flight correctFlight = new PrivateFlight();
+//		correctFlight.setMiles(milesToTravel);
+//		return correctFlight;
 	}
 	
 	private static Flight getDomesticFlight(Double milesToTravel) {
-//		Flight correctFlight = allFlightsMap.get(PlaneType.DOMESTIC);
-//		if(correctFlight == null) {
-//			correctFlight = new DomesticFlight();
-//			correctFlight.setMiles(milesToTravel);
-//			allFlightsMap.put(PlaneType.DOMESTIC, correctFlight);
-//		}
-//		return correctFlight;
-		
-		Flight correctFlight = new DomesticFlight();
-		correctFlight.setMiles(milesToTravel);
+		Flight correctFlight = allFlightsMap.get(PlaneType.DOMESTIC);
+		if(correctFlight == null) {
+			correctFlight = new DomesticFlight();
+			correctFlight.setMiles(milesToTravel);
+			allFlightsMap.put(PlaneType.DOMESTIC, correctFlight);
+		}
 		return correctFlight;
+		
+//		Flight correctFlight = new DomesticFlight();
+//		correctFlight.setMiles(milesToTravel);
+//		return correctFlight;
 	}
 	
 	private static Flight getInternationalFlight(Double milesToTravel) {
-//		Flight correctFlight = allFlightsMap.get(PlaneType.INTERNATIONAL);
-//		if(correctFlight == null) {
-//			correctFlight = new InternationalFlight();
-//			correctFlight.setMiles(milesToTravel);
-//			allFlightsMap.put(PlaneType.INTERNATIONAL, correctFlight);
-//		}
-//		return correctFlight;
-		
-		Flight correctFlight = new InternationalFlight();
-		correctFlight.setMiles(milesToTravel);
+		Flight correctFlight = allFlightsMap.get(PlaneType.INTERNATIONAL);
+		if(correctFlight == null) {
+			correctFlight = new InternationalFlight();
+			correctFlight.setMiles(milesToTravel);
+			allFlightsMap.put(PlaneType.INTERNATIONAL, correctFlight);
+		}
 		return correctFlight;
+		
+//		Flight correctFlight = new InternationalFlight();
+//		correctFlight.setMiles(milesToTravel);
+//		return correctFlight;
 	}
 	
 }
