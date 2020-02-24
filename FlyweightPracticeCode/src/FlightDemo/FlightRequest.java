@@ -235,6 +235,7 @@ public class FlightRequest {
 		
 	}
 	
+	//Function To Generate Valid Number of Miles For Flights:
 	private static Double getRandomMiles() {
 		Random currentRandomGenerator = new Random();
 		return currentRandomGenerator.nextDouble() * 10000;
