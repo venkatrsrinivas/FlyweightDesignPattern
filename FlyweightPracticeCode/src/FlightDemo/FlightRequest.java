@@ -226,8 +226,8 @@ public class FlightRequest {
 				currentFlight.startFlying();  
 			}
 			long endTime = System.currentTimeMillis();
-			System.out.println("Took Approximately " + (float)(endTime - startTime)/1000 + " Seconds!");
-			averageTime += (float)(endTime - startTime)/1000;
+			System.out.println("Took Approximately " + (float)(endTime - startTime)/100 + " Seconds!");
+			averageTime += (float)(endTime - startTime)/100;
 		}
 		//Compute Correct Average For 23 Trials of 100 Each:
 		averageTime /= 23;
